@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_customer" model="ir.ui.view">
+        <field name="name">Customer Form</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <form string="Customer">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="name"/>
+                                <field name="address"/>
+                                <field name="number_of_sales"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="type" readonly="1"/>
+                        </group>
+                        
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_notas" model="ir.ui.view">
+        <field name="name">notas Form</field>
+        <field name="model">res.notas</field>
+        <field name="arch" type="xml">
+            <form string="notas">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="matricula_id"/>
+                                <field name="value" readonly="1"/>
+                    
+                       </group>
+                    </group>
+                    <group>
+                            <field name="notas_line">
+                                    <tree string="notas" editable="bottom">
+                                            <field name="term"/>
+                                            <field name="value"/>
+                                    </tree>
+                            </field>
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="view_notas_tree" model="ir.ui.view">
+        <field name="name">notas.tree</field>
+        <field name="model">res.notas</field>
+        <field name="arch" type="xml">
+            <tree  edit="false">
+                <field name="matricula_id"/>
+                <field name="value"/>
+
+                
+            </tree>
+        </field>
+    </record>
+</odoo>

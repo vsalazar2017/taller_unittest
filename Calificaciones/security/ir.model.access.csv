@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_alumno,access_alumno,model_res_alumno,base.group_user,1,1,1,1
+access_profesor,access_profesor,model_res_profesor,base.group_user,1,1,1,1 
+access_curso,access_curso,model_res_curso,base.group_user,1,1,1,1 
+access_dictar,access_dictar,model_res_dictar,base.group_user,1,1,1,1 
+access_matricula,access_matricula,model_res_matricula,base.group_user,1,1,1,1 
+access_notas,access_notas,model_res_notas,base.group_user,1,1,1,1 
+access_profesor,access_profesor,model_res_profesor,base.group_user,1,1,1,1
+access_notas_line,access_notas_line,model_res_notas_line,base.group_user,1,1,1,1 

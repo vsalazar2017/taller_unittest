@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_profesor" model="ir.ui.view">
+        <field name="name">Profesor Form</field>
+        <field name="model">res.profesor</field>
+        <field name="arch" type="xml">
+            <form string="Profesor">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="name"/>
+                                <field name="address"/>
+                                <field name="phone"/>
+                                 <field name="email"/>
+                        </group>
+                        <group name="group_right">
+                        </group>
+                        
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+</odoo>

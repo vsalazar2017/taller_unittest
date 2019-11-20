@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <act_window id="action_alumno" name="Alumno" res_model="res.alumno" 
+    view_mode="tree,form"/>
+    <act_window id="action_curso" name="Curso" res_model="res.curso"
+     view_mode="tree,form"/>
+    <act_window id="action_profesor" name="Profesor" res_model="res.profesor"
+     view_mode="tree,form"/>
+    <act_window id="action_dictar" name="Dictar" res_model="res.dictar"
+    view_mode="tree,form"/>
+    <act_window id="action_matricula" name="Matricula" res_model="res.matricula" view_mode="tree,form"/>
+    <act_window id="action_notas" name="Notas" res_model="res.notas"
+    view_mode="tree,form"/>
+    
+    <menuitem id="menu_root" name="Calificaciones"/>
+
+    <menuitem id="menu_calif" name="Calificaciones" parent="menu_root"/>
+    <menuitem id="menu_alumno" name="Alumno" action="action_alumno" parent="menu_calif" />
+     <menuitem id="menu_profesor" name="Profesor" action="action_profesor" parent="menu_calif"/>
+      <menuitem id="menu_curso" name="Curso" action="action_curso" parent="menu_calif" />
+       <menuitem id="menu_dictar" name="Dictar" action="action_dictar" parent="menu_calif" />
+        <menuitem id="menu_matricula" name="Matricula" action="action_matricula" parent="menu_calif" />
+         <menuitem id="menu_notas" name="Notas" action="action_notas"  parent="menu_calif"/>
+
+</odoo>

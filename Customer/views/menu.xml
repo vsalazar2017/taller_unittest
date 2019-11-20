@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <act_window id="action_customer" name="Odoo test" res_model="customer" view_mode="tree,form"/>
+    <menuitem id="menu_customer" name="Customer" action="action_customer" />
+</odoo>

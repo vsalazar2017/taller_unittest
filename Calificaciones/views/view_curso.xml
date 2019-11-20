@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_curso" model="ir.ui.view">
+        <field name="name">Curso Form</field>
+        <field name="model">res.curso</field>
+        <field name="arch" type="xml">
+            <form string="Curso">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="name"/>
+                                <field name="num_cred"/>
+                        </group>
+                        <group name="group_right">
+                        </group>
+                        
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+</odoo>

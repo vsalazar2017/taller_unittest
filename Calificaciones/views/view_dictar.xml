@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_dictar" model="ir.ui.view">
+        <field name="name">Dictar Form</field>
+        <field name="model">res.dictar</field>
+        <field name="arch" type="xml">
+            <form string="Profesor">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="date_init"/>
+                                <field name="date_end"/>
+                                <field name="teacher"/>
+                                 <field name="course"/>
+                        </group>
+                        <group name="group_right">
+                        </group>
+                        
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="view_dictar_tree" model="ir.ui.view">
+        <field name="name">dictar.tree</field>
+        <field name="model">res.dictar</field>
+        <field name="arch" type="xml">
+            <tree  edit="false">
+                <field name="teacher"/>
+                <field name="course"/>
+                <field name="date_init"/>
+                <field name="date_end"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

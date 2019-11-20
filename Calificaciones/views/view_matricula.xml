@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_matricula" model="ir.ui.view">
+        <field name="name">matricula Form</field>
+        <field name="model">res.matricula</field>
+        <field name="arch" type="xml">
+            <form string="Matricula">
+                <header>
+                    <!-- Buttons-->
+                   
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                                <field name="date"/>
+                                <field name="type_enrollment"/>
+                                <field name="course"/>
+                                 <field name="student"/>
+                        </group>
+                        <group name="group_right">
+                        </group>
+                        
+                    </group>
+                    <group>
+                     
+                    </group>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="view_matricula_tree" model="ir.ui.view">
+        <field name="name">matricula.tree</field>
+        <field name="model">res.matricula</field>
+        <field name="arch" type="xml">
+            <tree  edit="false">
+                <field name="date"/>
+                <field name="type_enrollment"/>
+                <field name="course"/>
+                <field name="student"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
